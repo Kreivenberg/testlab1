@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
     ];
     
     const selectedHandler = donorHandlers[Math.floor(Math.random() * donorHandlers.length)];
-    // --- КОНЕЦ ИЗМЕНЕНИЯ ---
+
 
     try {
         const result = await selectedHandler(videoId, requestedFormat);
